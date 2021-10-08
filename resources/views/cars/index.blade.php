@@ -10,7 +10,9 @@
     <h1>Cars</h1>
     @foreach($cars as $car)
     <li>
-        {{ $car->title }}
+        <a href="{{route('car', ['car' => $car->id])}}">
+            {{ $car->title }}
+        </a>
     </li>
     @endforeach
 </body>
