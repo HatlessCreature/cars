@@ -1,20 +1,17 @@
-<html>
+@extends('layouts.app')
 
-<head>
-    <title>
-        Cars
-    </title>
-</head>
+@section('title', 'Cars')
 
-<body>
-    <h1>Cars</h1>
+@section('content')
+<h1>Cars</h1>
+<ul>
     @foreach($cars as $car)
     <li>
         <a href="{{route('car', ['car' => $car->id])}}">
-            {{ $car->title }}
+            {{ $car->title  }}
         </a>
     </li>
     @endforeach
-</body>
+</ul>
 
-</html>
+@endsection
