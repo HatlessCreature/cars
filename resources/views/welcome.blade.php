@@ -12,7 +12,10 @@
 </head>
 
 <body>
-    <h1>Welcome to Cars Project</h1>
+    <h1>Welcome {{$name}}</h1>
+    <div>
+        I'm {{$age}} years old
+    </div>
 </body>
 
 </html>
