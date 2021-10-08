@@ -12,9 +12,9 @@
 </head>
 
 <body>
-    <h1>Welcome {{$name}}</h1>
+    <h1>Welcome {{ $name }}</h1>
     <div>
-        I'm {{$age}} years old
+        I'm {{ $age }} years old
     </div>
 </body>
 
